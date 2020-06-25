@@ -23,6 +23,9 @@ markdown_extensions:
 
 plugins:
   - search:
+      separator: '[\s\-\.]+'
+      lang:
+        - en
   - minify:
       minify_html: true
   - git-committers:
@@ -34,11 +37,14 @@ theme:
   name: "material"
   custom_dir: docs/assets/theme/
   favicon: "assets/images/favicon.png"
+  features:
+    - tabs
+    - instant
   palette:
     primary: "red"
     accent: "pink"
-  logo:
-    icon: "explore"
+  icon:
+    logo: "material/compass"
   font:
     text: "Roboto"
     code: "Roboto Mono"
@@ -49,7 +55,7 @@ extra_javascript:
 
 extra:
   social:
-    - type: "github"
+    - icon: "fontawesome/brands/github-alt"
       link: "https://github.com/lambda-school-labs"
 
 nav:
