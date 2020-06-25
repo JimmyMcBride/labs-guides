@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+
+{% block disqus %}
+
+<ul class="metadata page-metadata" >
+  <li class="last-updated-holder displayDate loading">
+    <span class="last-updated-text">Last updated:</span>
+    <time role="presentation" datetime="2018-10-25T00:00:00.000Z" data-article-date-source="ms.date">{% if last_commit_date %}{{ last_commit_date }}{% endif %}</time>
+  </li>
+</ul>
+<ul class="metadata page-metadata" data-bi-name="page info" lang="en-us" dir="ltr">
+  <li class="contributors-holder">
+    <span class="contributors-text">Contributors</span>
+    <ul class="contributors" data-bi-name="contributors">
+      {%- for user in committers -%}
+      <li><a href="{{ user.repos }}" title="{{ user.name }}" data-bi-name="contributorprofile">
+        <img src="/assets/images/contributor.png" data-src="{{ user.avatar }}" alt="{{ user.name }}">
+      </a></li>
+      {%- endfor -%}
+    </ul>
+  </li>
+</ul>
+  {% include "partials/integrations/disqus.html" %}
+{% endblock %}
