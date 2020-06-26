@@ -65,10 +65,10 @@ nav:
       - Rebasing a Feature Branch: topics/git-rebase-feature-branch.md
   - Deployment:
       - AWS Amplify Frontend: topics/aws-amplify-deploy.md
+      - Heroku Pipeline Deployment: topics/heroku-pipeline-deployment.md
       - Heroku PointDNS: topics/heroku-point-dns.md
       - Setup HTTPS/SSL: topics/https-ssl-support.md
       - Review Apps: topics/review-apps-heroku.md
   - ESLint and Prettier: topics/eslint-prettier-setup.md
   - Trello Integration: topics/github-trello-integration.md
-  - Heroku Pipeline Deployment: topics/heroku-pipeline-deployment.md
   - Writing Standards: topics/writing-standards.md
