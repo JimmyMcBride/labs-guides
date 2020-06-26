@@ -70,4 +70,5 @@ nav:
       - Review Apps: topics/review-apps-heroku.md
   - ESLint and Prettier: topics/eslint-prettier-setup.md
   - Trello Integration: topics/github-trello-integration.md
+  - Heroku Pipeline Deployment: topics/heroku-pipeline-deployment.md
   - Writing Standards: topics/writing-standards.md
